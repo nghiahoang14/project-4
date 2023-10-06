@@ -1103,33 +1103,32 @@ a {
     width: 268px;
     margin-top: 35px;
 }
-.footer-form .form {
-    position: relative;
+.footer-form {
+    display: flex;
+    align-items: space-between;
     width: 268px;
     height: 46px;
     flex-shrink: 0;
     border-radius: 23px;
     border: 1px solid rgba(255, 91, 46, 0.25);
-    opacity: 0.6;
+
     background: #fff;
 }
-.footer-form .form span {
-    left: 22px;
-    top: 16px;
-    position: absolute;
-    color: #656689;
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.16; /* 116.667% */
+.footer-form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    padding: 0 22px;
 }
 .footer-control {
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border: none;
+    outline: 0;
     width: 45px;
     height: 46px;
     border-radius: 22.5px;
@@ -1137,6 +1136,7 @@ a {
     transition: 0.3s;
 }
 .footer-control:hover {
+    cursor: pointer;
     box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
 }
 .footer-social {
